@@ -1,0 +1,109 @@
+/* font and background settings */
+body {
+  font-family: Sunshiney;
+  color: yellow;
+  background-color: black;
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+/* header's settings*/
+header {
+  margin: auto;
+  font-size: 96px;
+  grid-area: header;
+}
+
+/* grid is used in gellery, 1 column by default for small screens */
+.gallery {
+  padding: 50px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-area: left;
+}
+
+/* info block's settings, flex is used here so the text is always in the center of block */
+.info {
+  font-size: 40px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  grid-area: right;
+}
+
+/* footer's settings */
+footer {
+  grid-area: footer;
+  margin: auto;
+  font-size: 32px;
+}
+
+/* images max-width is 60% by default for small screens */
+img {
+  transition: all 1s ease;
+  max-width: 60%;
+  margin: auto;
+}
+
+/* when you hover over a picture, it increases */
+img:hover {
+  transform: scale(1.3);
+}
+
+/* max-width of all content on the page is 1600px;
+grid is used here, 4 areas:
+header, left (image gallery), right (text) and footer;
+ here is 1 column by default for small screen */
+.content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "left"
+    "right"
+    "footer";
+}
+
+/* there are 2 columns in content and gallery when sreen width > 800px */
+@media screen and (min-width: 800px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "left right"
+      "footer footer";
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  img {
+    max-width: 100%;
+  }
+  img:hover {
+    transform: scale(1.4);
+  }
+}
+
+/* there are 3 columns in content and gallery when sreen width > 1200px */
+@media screen and (min-width: 1200px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "left left right"
+      "footer footer footer";
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  img:hover {
+    transform: scale(1.4);
+  }
+}

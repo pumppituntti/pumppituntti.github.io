@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar System</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunshiney&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <header>Solar System</header>
+      <div class="gallery">
+        <img src="img/sun.png" alt="sun" />
+        <img src="img/mercury.png" alt="mercury" />
+        <img src="img/venus.png" alt="venus" />
+        <img src="img/earth.png" alt="earth" />
+        <!-- some easter egg for mars picture hehehe -->
+        <img
+          src="img/mars.png"
+          alt="mars"
+          onmouseover="hover(this);"
+          onmouseout="unhover(this);"
+        />
+        <img src="img/jupiter.png" alt="jupiter" />
+        <img src="img/saturn.png" alt="saturn" />
+        <img src="img/uranus.png" alt="uranus" />
+        <img src="img/neptune.png" alt="neptune" />
+      </div>
+      <div class="info">
+        <p>
+          The Solar System is the gravitationally bound system of the Sun and
+          the objects that orbit it, either directly or indirectly. Of the
+          objects that orbit the Sun directly, the largest are the eight
+          planets, with the remainder being smaller objects, the dwarf planets
+          and small Solar System bodies. Of the objects that orbit the Sun
+          indirectly—the natural satellites—two are larger than the smallest
+          planet, Mercury.
+        </p>
+      </div>
+      <footer>
+        <p>
+          All images are taken from
+          <a href="https://www.pngwing.com/" target="top">pngwing.com</a> and
+          they are licensed for non-commercial use.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script>
+    // change the source of picture when you hover it over
+    function hover(element) {
+      element.setAttribute("src", "img/mars2.png");
+    }
+    function unhover(element) {
+      element.setAttribute("src", "img/mars.png");
+    }
+  </script>
+</html>
