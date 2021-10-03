@@ -1,4 +1,4 @@
 # pumppituntti.github.io
-This is repository for my projects.
+This is repository of my training exercises and projects.
 
 Mostly HTML/CSS, but JavaScript (ECMAScript) also.
