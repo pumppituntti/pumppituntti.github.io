@@ -14,6 +14,6 @@ function fileReader(resolve, reject) {
 }
 const p = new Promise(fileReader);
 
-p.then((value) => console.log(value)).catch((errormsg) =>
-  console.log(errormsg)
-);
+p
+.then((value) => console.log(value))
+.catch((errormsg) => console.log(errormsg));
