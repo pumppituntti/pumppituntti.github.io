@@ -7,7 +7,7 @@ function fileReader(resolve, reject) {
     try {
       var obj = JSON.parse(data);
       if (!("name" in obj)) {
-        reject(`file ${path} contains json but not property name`);
+        reject(`file ${path} contains json, but not property name`);
       }
       resolve(obj.name);
     } catch (error) {
