@@ -4,5 +4,5 @@ There are three checks in the program:<br/>
 <ul>
   <li> What if text file does not exist?</li>
   <li> What if text file does not contain json information?</li>
-  <li> What if text file contains json information but does not contain name property?</li>
+  <li> What if text file contains json information, but does not contain name property?</li>
 </ul>
