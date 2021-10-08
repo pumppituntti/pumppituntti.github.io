@@ -1,7 +1,7 @@
 In this application, I have used <a href="https://swapi.dev/">The Star Wars API</a>. 
 It outputs the names of the characters and the movies in which they were present.
 
-It works so that user gives id’s via command line arguments: <br />
+It works so that user gives id’s via command line arguments, for example: <br />
 node index.js 1 2 3 4 5 6 7 8 9 10
 
 And it will output all the names and titles:
