@@ -70,7 +70,6 @@ let connectionFunctions = {
 
   findById: (id) => {
     return new Promise((resolve, reject) => {
-      let status = 404;
       let sql = "select * from locations where id = " + connection.escape(id);
       connection.query(sql, (err, locations) => {
         if (err) {
@@ -84,7 +83,6 @@ let connectionFunctions = {
 
   filter: (query) => {
     return new Promise((resolve, reject) => {
-      let status = 404;
       let sql = `select * from locations where ${query} `;
       connection.query(sql, (err, locations) => {
         if (err) {
