@@ -1,13 +1,25 @@
+# Find all
 GET http://localhost:8080/locations/
 
+# Find by id
 GET http://localhost:8080/locations/1
 
+# Filter by min value
 GET http://localhost:8080/locations/min?latitude=50
 
+# Filter by max value
 GET http://localhost:8080/locations/max?longitude=50
 
+# Sort by longitude
+GET http://localhost:8080/locations/sort?longitude
+
+# Sort by latitude
+GET http://localhost:8080/locations/sort?longitude
+
+# Delete by id
 DELETE  http://localhost:8080/locations/5
 
+# Post new location
 POST http://localhost:8080/locations/
 Content-type: application/json
 

@@ -55,6 +55,21 @@ let connectionFunctions = {
     });
   },
 
+  sortBy: (key) => {
+    return new Promise((resolve, reject) => {
+      connection.query(
+        `select * from locations order by ${key}, id`,
+        (err, locations) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(locations);
+          }
+        }
+      );
+    });
+  },
+
   deleteById: (id) => {
     return new Promise((resolve, reject) => {
       let sql = "delete from locations where id = " + connection.escape(id);

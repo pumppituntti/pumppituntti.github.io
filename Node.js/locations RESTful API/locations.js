@@ -25,12 +25,10 @@ locations.get("/max?", async (req, res) => {
   try {
     if (req.query.latitude) {
       let filter = `latitude <= ${req.query.latitude.toString()}`;
-      console.log(filter);
       let result = await connection.filter(filter);
       res.send(result);
     } else if (req.query.longitude) {
       let filter = `longitude <= ${req.query.longitude.toString()}`;
-      console.log(filter);
       let result = await connection.filter(filter);
       res.send(result);
     } else {
@@ -45,13 +43,30 @@ locations.get("/min?", async (req, res) => {
   try {
     if (req.query.latitude) {
       let filter = `latitude >= ${req.query.latitude.toString()}`;
-      console.log(filter);
       let result = await connection.filter(filter);
       res.send(result);
     } else if (req.query.longitude) {
       let filter = `longitude >= ${req.query.longitude.toString()}`;
-      console.log(filter);
       let result = await connection.filter(filter);
+      res.send(result);
+    } else {
+      res.sendStatus(400);
+    }
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+locations.get("/sort?", async (req, res) => {
+  try {
+    if (req.query.latitude !== undefined) {
+      console.log(req.query.latitude);
+      let key = `latitude`;
+      let result = await connection.sortBy(key);
+      res.send(result);
+    } else if (req.query.longitude !== undefined) {
+      let key = `longtitude`;
+      let result = await connection.sortBy(key);
       res.send(result);
     } else {
       res.sendStatus(400);
