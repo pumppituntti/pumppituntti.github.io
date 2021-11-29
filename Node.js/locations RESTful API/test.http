@@ -17,11 +17,11 @@ GET http://localhost:8080/locations/sort?longitude
 GET http://localhost:8080/locations/sort?longitude
 
 # Delete by id
-DELETE  http://localhost:8080/locations/5
+DELETE  http://localhost:8080/locations/21
 
 # Post new location
 POST http://localhost:8080/locations/
 Content-type: application/json
 
-{"latitude": 45,
-"longitude": 45}
+{"latitude": 13,
+"longitude": 70}

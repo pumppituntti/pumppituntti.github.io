@@ -65,7 +65,7 @@ locations.get("/sort?", async (req, res) => {
       let result = await connection.sortBy(key);
       res.send(result);
     } else if (req.query.longitude !== undefined) {
-      let key = `longtitude`;
+      let key = `longitude`;
       let result = await connection.sortBy(key);
       res.send(result);
     } else {
@@ -108,7 +108,7 @@ locations.post("/", async (req, res) => {
       res.statusCode = 201;
       res.send(loc);
     } else {
-      res.end;
+      console.log("ERROR");
       res.statusCode = 400;
       res.send(res.statusCode + " Bad request\n" + result.errors);
     }
