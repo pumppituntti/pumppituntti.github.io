@@ -7,4 +7,6 @@ So, before start the application, you need to start the server using the command
 <i>npx json-server -H localhost -p 3010 -w ./db.json</i>
 
 ## Some screenshots
-<a href="https://ibb.co/Mk4wm3x"><img src="https://i.ibb.co/Mk4wm3x/screenshot3.png" alt="screenshot3" border="0"></a> <a href="https://ibb.co/zHNPjZZ"><img src="https://i.ibb.co/zHNPjZZ/screenshot2.png" alt="screenshot2" border="0"></a> <a href="https://ibb.co/NNVxG4B"><img src="https://i.ibb.co/NNVxG4B/screenshot1.png" alt="screenshot1" border="0"></a>
+<img src="https://i.ibb.co/Mk4wm3x/screenshot3.png" alt="screenshot3"> 
+<img src="https://i.ibb.co/zHNPjZZ/screenshot2.png" alt="screenshot2" >
+<img src="https://i.ibb.co/2Mnqpb4/screenshot1.png" alt="screenshot1" >
