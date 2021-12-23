@@ -1,0 +1,129 @@
+{
+  "lists": [
+    {
+      "id": 2,
+      "name": "Frontend",
+      "edited": "2021-12-20-12-50-28",
+      "colorId": 4
+    },
+    {
+      "name": "Backend",
+      "colorId": 7,
+      "edited": "2021-12-20-12-50-56",
+      "id": 3
+    },
+    {
+      "name": "Wishlist",
+      "colorId": 2,
+      "edited": "2021-12-20-12-49-45",
+      "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "listId": 2,
+      "text": "Learn html",
+      "completed": true,
+      "id": 4,
+      "edited": "2021-12-19-11-18-51"
+    },
+    {
+      "listId": 3,
+      "text": "Learn Node.js",
+      "completed": true,
+      "id": 11,
+      "edited": "2021-12-20-12-50-56"
+    },
+    {
+      "listId": 3,
+      "text": "Learn databases",
+      "completed": true,
+      "id": 12,
+      "edited": "2021-12-20-12-50-47"
+    },
+    {
+      "listId": 3,
+      "text": "Do homework",
+      "completed": true,
+      "id": 13,
+      "edited": "2021-12-20-12-50-49"
+    },
+    {
+      "listId": 4,
+      "text": "Workplace in IT",
+      "completed": false,
+      "id": 15,
+      "edited": "2021-12-19-11-18-51"
+    },
+    {
+      "listId": 2,
+      "text": "Learn CSS",
+      "completed": true,
+      "id": 16,
+      "edited": "2021-12-20-12-22-28"
+    },
+    {
+      "listId": 2,
+      "text": "Learn React",
+      "completed": true,
+      "id": 17,
+      "edited": "2021-12-20-12-49-54"
+    },
+    {
+      "listId": 2,
+      "text": "Make the React project",
+      "completed": true,
+      "id": 18,
+      "edited": "2021-12-20-12-50-28"
+    },
+    {
+      "listId": 3,
+      "text": "Make the node.js project",
+      "completed": false,
+      "id": 19,
+      "edited": "2021-12-20-12-50-46"
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#C9D1D3",
+      "name": "grey"
+    },
+    {
+      "id": 2,
+      "hex": "#42B883",
+      "name": "green"
+    },
+    {
+      "id": 3,
+      "hex": "#64C4ED",
+      "name": "blue"
+    },
+    {
+      "id": 4,
+      "hex": "#FFBBCC",
+      "name": "pink"
+    },
+    {
+      "id": 5,
+      "hex": "#B6E6BD",
+      "name": "lime"
+    },
+    {
+      "id": 6,
+      "hex": "#C355F5",
+      "name": "purple"
+    },
+    {
+      "id": 7,
+      "hex": "#110133",
+      "name": "black"
+    },
+    {
+      "id": 8,
+      "hex": "#FF6464",
+      "name": "red"
+    }
+  ]
+}
