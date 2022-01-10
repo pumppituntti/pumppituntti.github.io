@@ -15,14 +15,7 @@ code {
 
 .todo {
   display: flex;
-  // position: absolute;
-  // left: 50%;
-  // top: 50%;
-  // width: 100%;
-  // // width: calc(100vw - 100px);
-  // height: calc(100vh - 100px);
   height: 100vh;
-  // transform: translate(-50%, -50%);
   box-shadow: 1px 2px 20px #f3f3f3;
   border-radius: 10px;
   border: 1px solid #f1f1f1;
@@ -31,7 +24,6 @@ code {
   &__sidebar {
     background-color: #f4f6f8;
     width: 40px;
-    // width: 200px;
     min-height: calc(100% - 120px);
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
